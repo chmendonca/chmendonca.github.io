@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHM</title>
+    <link rel="stylesheet" href="../../estilos/general.css" />
+    <link rel="stylesheet" href="../../estilos/hints.css" />
+</head>
+<script language="javascript" src="../../js/functions.js"></script>
+<body>
+    <div id="interface">
+    <header id="cabecalho">
+        <img id="bgheader" onload ="atualizaData()" src="../../imagens/background_header.jpg" />
+        <img id="picture" src="../../imagens/python/python.jpg" alt="languageLogo">
+        <hgroup>
+            <h1>My Devs</h1>
+            <h2 id="updatedDate"></h2>
+    </hgroup>
+    <nav id="menuflutuante">
+        <ul id="menu">
+            <li onmouseover="mudaFoto('../../imagens/myself.jpg')" onmouseout="mudaFoto('../../imagens/python/python.jpg')"><a href="../../index.html">Home</a></li>
+            <li onmouseover="mudaFoto('../../imagens/python/python.jpg')" onmouseout="mudaFoto('../../imagens/python/python.jpg')"><a href="../../mainPython.html">Python</a></li>
+            <li onmouseover="mudaFoto('../../imagens/java/java.jpg')" onmouseout="mudaFoto('../../imagens/python/python.jpg')"><a href="../../mainJava.html">Java</a></li>
+            <li onmouseover="mudaFoto('../../imagens/html5css3/html5css3.jpg')" onmouseout="mudaFoto('../../imagens/python/python.jpg')"><a href="../../mainHtml5Css3.html">HTML5/CSS3</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div id="principal">
+            <h1>Book: "Curso Intensivo de Python"</h1>
+            <p>This book contains a general course information of Python programming. With this book is possible to learn about types of variable, lists, dictionaries, flow controls (while, for, if/else, etc), functions, exceptions, an introduction of unit tests and projects to exercise.</p>
+            <h2>Project 1 - Pygame:</h2>
+            <p>On this project the book had instructions to build a game "Alien Invasion". The game used a Python library Pygame that already have to many built in functions to support the games construction.</p>
+            <p>The "Alien Invasion" consists in a fleet of aliens that tryes reach the soil and a spaceship that tryes to protect against this invasion. The player controls the spaceship moving it horizontally (left-right) and shots the aliens. Every time that the aliens fleet is destroyed, a new one is placed on and it moves a little faster than previous one. The player has three attempts to avoid the invasion. The game finishes when the aliens touch the soil or they hit the spaceship.</p>
+            <p>In order to improve my skills, in parallel to this game construction, I've built another version of the same game that I called "Hero Combat". To do this other version I used a picture of a Hero that my son painted during COVID-19 pandemy. On this game, the Hero shots serynges with vacine in a random COVID-19 cloud that advances over him.</p>
+            <p>Video for both developments are available below.</p>
+            <p><span style="font-weight: bold;">Source Codes:</span> <a
+                    href="https://github.com/chmendonca/python/tree/master/pygame/alien_invasion">Alien Invasion</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/chmendonca/python/tree/master/pygame/hero_combat">Hero Combat</a></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VyOZpmfVasg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br/><a href="../../mainPython.html"><img src="../../imagens/back.png" alt="Voltar"></a>
+    </div>
+    <footer id="rodape">
+        <p><b>Cássio Henrique Mendonça</b></br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/cassio-mendon%C3%A7a-57100120/" target="blank">LinkedIn</a> | <a
+                ref="https://github.com/chmendonca" target="blank">GitHub Repository</a></p>
+    </footer>
+</div>
+</body>
+
+</html>
