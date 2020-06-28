@@ -2,24 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java</title>
-</head>
-<body>
-    <main>
-        <h1>Orientação a Objetos com Java (OO with Java)</h1>
-        <h2>Jogo Embaralhador de Palavras (Game Shuffled Words)</h2>
-        <p>Este jogo é o trabalho de conclusão de curso. Nele são apresentadas palavras embaralhadas que são comparadas com a resposta do jogador. O código e exercícios estâo disponíveis <a href="https://github.com/chmendonca/java/tree/master/coursera/OrientacaoObjetosComJava">AQUI</a></p>
-        <p>This game is the final project of the course. Shuffled words are showed up and are compared with the player answers. The code and homeworks are available <a href="https://github.com/chmendonca/java/tree/master/coursera/OrientacaoObjetosComJava">HERE</a></p>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/aY96pFa4FrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>
-            CERTIFICATE:
-            <a>
-                href="<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6679364920020226048" height="355" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>"Certificate"
-            </a>
-        </p>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-        <a href="../../mainJava.html"><img src="../../imagens/back.png" alt="Voltar"></a>
-    </main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHM</title>
+    <link rel="stylesheet" href="../../estilos/general.css" />
+    <link rel="stylesheet" href="../../estilos/hints.css" />
+</head>
+<script language="javascript" src="../../js/functions.js"></script>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <img id="bgheader" onload="atualizaData()" src="../../imagens/background_header.jpg" />
+            <img id="picture" src="../../imagens/java/java.jpg" alt="languageLogo">
+            <hgroup>
+                <h1>My Devs</h1>
+                <h2 id="updatedDate"></h2>
+            </hgroup>
+            <nav id="menuflutuante">
+                <ul id="menu">
+                    <li onmouseover="mudaFoto('../../imagens/myself.jpg')"
+                        onmouseout="mudaFoto('../../imagens/java/java.jpg')"><a href="../../index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('../../imagens/python/python.jpg')"
+                        onmouseout="mudaFoto('../../imagens/java/java.jpg')"><a href="../../mainPython.html">Python</a>
+                    </li>
+                    <li onmouseover="mudaFoto('../../imagens/java/java.jpg')"
+                        onmouseout="mudaFoto('../../imagens/java/java.jpg')"><a href="../../mainJava.html">Java</a></li>
+                    <li onmouseover="mudaFoto('../../imagens/html5css3/html5css3.jpg')"
+                        onmouseout="mudaFoto('../../imagens/java/java.jpg')"><a
+                            href="../../mainHtml5Css3.html">HTML5/CSS3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="principal">
+            <h1>Orientação a Objetos com Java (OO with Java)</h1>
+            <p>On this course I've learned the object orientation concepts on Java to start building games using "Eclipse". Some of the course contents (but not limited to) were attributes, methods (constructors, getters and setters), coupling, CRC cards modelling, basic UML,  functions override, introduction to tests and TDD using "JUnit4", heritage, interfaces, access modifiers and basic on errors handling.</p>
+            <p>The game on video below is the final project of the course. Shuffled words are showed up and are compared with the player answers.</p>
+            <p><span style="font-weight: bold;">Source Codes:</span> <a
+                    href="https://github.com/chmendonca/java/tree/master/coursera/OrientacaoObjetosComJava">Orientação a Objetos com Java</a></p>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/aY96pFa4FrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br /><a href="../../mainJava.html"><img src="../../imagens/back.png" alt="Voltar"></a>
+        </div>
+        <footer id="rodape">
+            <p><b>Cássio Henrique Mendonça</b></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/cassio-mendon%C3%A7a-57100120/" target="blank">LinkedIn</a> | <a
+                    ref="https://github.com/chmendonca" target="blank">GitHub Repository</a></p>
+        </footer>
+    </div>
 </body>
+
 </html>
