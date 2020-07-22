@@ -28,15 +28,27 @@
     </nav>
     </header>
     <div id="principal">
-        <h1>HINTS FOR Python</h1>
+        <h1>HINTS FOR PYTHON</h1>
         <h3>The topics are in alphabetical order</h3>
-        <h2>Under Construction</h2>
-        <p><span style="font-weight: bold;">Problem:</span> Problem description</p>
-        [optional: insert an image]
-        <p><span style="font-weight: bold;">Detected Error:</span> Error description.</p>
-        [optional: insert an image]
-        <p><span style="font-weight: bold;">Solution:</span> Solution description.</p>
-        [optional: insert an image]</br>
+        <h2>ModuleNotFoundError: No module named 'kivy'</h2>
+        <p><span style="font-weight: bold;">Problem:</span> The system was not finding the Kivy library even it being installed following the instructions for <a href="https://kivy.org/doc/stable/installation/installation-windows.html#installation-windows">Installation on Windows</a></p>
+        <p><span style="font-weight: bold;">Detected Error:</span> When executing the basic "Hello World!" script available on the <a href="https://kivy.org/doc/stable/guide/basic.html#quickstart">kivy.org</a>, I was facing "no module found" message as below:</p>
+        <pre><code>
+            Traceback (most recent call last):
+            File "c:\myScripts\GitHub\python\kivy\main.py", line 1, in <module>
+                import kivy
+            ModuleNotFoundError: No module named 'kivy'
+        </code></pre>
+        <p><span style="font-weight: bold;">Solution:</span> The solution was to install all the following packages at this sequence, one by one:</p>
+        <pre><code>
+            pip install --upgrade pip wheel setuptools --user
+            pip install docutils pygments pypiwin32 kivy.deps.sdl2 kivy.deps.glew
+            pip install kivy.deps.gstreamer
+            pip install kivy.deps.angle
+            pip install kivy
+        </code></pre>
+        <p>This information is available at: <a href="https://stackoverflow.com/questions/40697876/unable-to-get-a-window-abort/44727211#44727211" target="blank">StackOverflow</a>
+        </p>
         <a href="../../mainPython.html"><img src="../../imagens/back.png" alt="Voltar"></a>
     </div>
     <footer id="rodape">
